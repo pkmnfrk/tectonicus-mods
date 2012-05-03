@@ -65,5 +65,18 @@
 		<delete dir="${build}"/>
 		<delete dir="${dist}"/>
 	</target>
+	
+	<target
+		name="test">
+	
+		<java 
+			classname="tectonicus.TectonicusApp"
+			fork="true"
+			dir="test">
+			<classpath refid="deps" />
+			<arg value="config=config.xml" />
+		</java>
+		
+	</target>
 
 </project>

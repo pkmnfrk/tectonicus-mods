@@ -1,0 +1,22 @@
+<tectonicus version="2">
+
+	<config
+		outputDir="map"
+		numZoomLevels="8"
+		eraseOutputDir="true"
+	/>
+
+	<map
+		name="test map"
+		worldDir="world"
+		dimension="terra"
+		closestZoomSize="12"
+	>
+		<layer
+			name="Day"
+			lighting="day"
+			renderStyle="normal"
+		/>
+	</map>
+
+</tectonicus>
