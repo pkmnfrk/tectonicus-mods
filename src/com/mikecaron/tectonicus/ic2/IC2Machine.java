@@ -38,7 +38,7 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  */
-package com.mikecaron.tectoniucs.ic2;
+package com.mikecaron.tectonicus.ic2;
 
 import tectonicus.BlockContext;
 import tectonicus.BlockType;
@@ -48,6 +48,7 @@ import tectonicus.rasteriser.Mesh;
 import tectonicus.raw.RawChunk;
 import tectonicus.renderer.Geometry;
 import tectonicus.texture.SubTexture;
+import tectonicus.texture.TexturePack;
 import tectonicus.util.Colour4f;
 
 public class IC2Machine implements BlockType
@@ -63,16 +64,16 @@ public class IC2Machine implements BlockType
 	
 	private Colour4f colour;
 
-	public IC2Machine(String name, SubTexture bottom, SubTexture top, SubTexture left, SubTexture front, SubTexture right, SubTexture back)
+	public IC2Machine(String name, TexturePack texturePack, String texture, final int column)
 	{
 		this.name = name;
 		
-		this.bottomTexture = bottom;
-		this.topTexture = top;
-		this.leftTexture = left;
-		this.frontTexture = front;
-		this.rightTexture = right;
-		this.backTexture = back;
+		this.bottomTexture = texturePack.findTexture(texture + "[" + column + ", 0]");
+		this.topTexture = texturePack.findTexture(texture + "[" + column + ", 1]");
+		this.backTexture = texturePack.findTexture(texture + "[" + column + ", 2]");
+		this.frontTexture = texturePack.findTexture(texture + "[" + column + ", 3]");
+		this.leftTexture = texturePack.findTexture(texture + "[" + column + ", 4]");
+		this.rightTexture = texturePack.findTexture(texture + "[" + column + ", 5]");
 		
 		colour = new Colour4f(1, 1, 1, 1);
 	}
