@@ -2,9 +2,9 @@
                   Tectonicus
    Version: 2.14
    Build exported\r\n
-   Constructed on May 3 2012 at 2038
+   Constructed on May 3 2012 at 2127
  + + + + + + + + + + + + + + + + + + + + + + +
-Started on Thu May 03 20:39:09 EDT 2012
+Started on Thu May 03 21:51:59 EDT 2012
 System:
 	OS Name: Windows 7
 	OS Architecture: amd64
@@ -43,6 +43,9 @@ Settings:
 	outputHtmlName:map.html
 	numDownsampleThreads:4
 	singlePlayerName:
+Plugins:
+ic2
+	name: IndustrialCraft2 Tectonicus Module
 'test map' map
 	worldDir: c:\projects\Tectonicus-mods\test\world
 	dimension: Terra
@@ -60,16 +63,16 @@ Deleting output dir: c:\projects\Tectonicus-mods\test\map
 Player skin cache is old or corrupt, cleaning...
 Creating player icon assembler
 Initialising display...
-	Drawable: org.lwjgl.opengl.Display$3@2713fcac
-	created pbuffer: org.lwjgl.opengl.Pbuffer@bd51756
+	Drawable: org.lwjgl.opengl.Display$3@2914b988
+	created pbuffer: org.lwjgl.opengl.Pbuffer@d37c3b5
 	used pixel format:   colour:16 depth:16 alpha:0 stencil:0 samples:0
 	display created ok
-Using rasteriser: tectonicus.rasteriser.lwjgl.LwjglRasteriser@55c0c66a
+Using rasteriser: tectonicus.rasteriser.lwjgl.LwjglRasteriser@6657968b
  -- Lwjgl Rasteriser -- 
 	type: Offscreen
 	width: 2048
 	heigth: 2048
-	pBuffer: org.lwjgl.opengl.Pbuffer@bd51756
+	pBuffer: org.lwjgl.opengl.Pbuffer@d37c3b5
 	OpenGL Vendor: ATI Technologies Inc.
 	OpenGL Renderer: AMD Radeon HD 6500M/5600/5700 Series
 	OpenGL Version: 4.1.11079 Compatibility Profile Context
@@ -123,7 +126,7 @@ View rendering done!
 Settings changed! Deleting tile cache at c:\projects\Tectonicus-mods\test\map\Cache\tileHashes\Map0\LayerA
 New tile cache will be created for this render
 100%
-FindChangedTiles took: 0.498 seconds
+FindChangedTiles took: 0.324 seconds
 RenderBaseTiles
 Base render is at zoom 12 with 512x512 tiles
 RenderBaseTiles
@@ -249,7 +252,7 @@ Exporting stats...
 Outputting stats to c:\projects\Tectonicus-mods\test\map\Scripts\stats.js
 Writing changed file list...
 OutputChangedList
-Render complete - total time 6 seconds
+Render complete - total time 10 seconds
 Cleaning up...
 Writing player skin cache info (1 skin to write)
 100%

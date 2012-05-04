@@ -13,6 +13,14 @@
 			<include name="**/*.jar" />
 		</fileset>
 	</path>
+	<path id="depsplus">
+		<fileset dir="lib">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${dist}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
 	
 	<target
 		name="init">
@@ -76,8 +84,9 @@
 		<java 
 			classname="tectonicus.TectonicusApp"
 			fork="true"
-			dir="test">
-			<classpath refid="deps" />
+			dir="test"
+			output="text.log">
+			<classpath refid="depsplus" />
 			<arg value="config=config.xml" />
 		</java>
 		
