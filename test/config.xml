@@ -4,7 +4,13 @@
 		outputDir="map"
 		numZoomLevels="8"
 		eraseOutputDir="true"
-	/>
+	>
+		<plugin
+			name="ic2"
+			class="com.mikecaron.tectonicus.ic2.IC2Plugin">
+		
+		</plugin>
+	</config>
 
 	<map
 		name="test map"
