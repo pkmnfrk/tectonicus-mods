@@ -1,4 +1,6 @@
 build
 dist
 lib/*
+test/map
+test/TectonicusLog.txt
 *.log

@@ -85,7 +85,7 @@
 			classname="tectonicus.TectonicusApp"
 			fork="true"
 			dir="test"
-			output="text.log">
+			output="test.log">
 			<classpath refid="depsplus" />
 			<arg value="config=config.xml" />
 		</java>
