@@ -1,6 +1,6 @@
 <project
 	name="Tectonicus Mod Plugins"
-	default="all"
+	default="clean-build"
 	>
 	
 	<property name="src" location="src" />
@@ -58,6 +58,10 @@
 		depends="ic2">
 		
 	</target>
+	
+	<target
+		name="clean-build"
+		depends="clean, all" />
 	
 	<target
 		name="clean">
