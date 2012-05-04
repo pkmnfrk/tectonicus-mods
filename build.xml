@@ -39,6 +39,8 @@
 			destdir="${build}"
 			source="1.5"
 			target="1.5"
+			debug="true"
+			debuglevel="lines,source"
 			includeAntRuntime="false">
 			
 			<classpath refid="deps"/>
