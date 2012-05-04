@@ -12,7 +12,7 @@ import tectonicus.Plugin;
 import tectonicus.BlockTypeRegistry;
 import tectonicus.configuration.XmlConfigurationParser;
 
-public class IC2Plugin implements Plugin
+public class IC2Plugin extends Plugin
 {
 	private static final EnumSet<Plugin.Feature> features = EnumSet.of(
 		Plugin.Feature.BlockTypes
@@ -26,10 +26,12 @@ public class IC2Plugin implements Plugin
 		ic2Config = new Properties();
 	}
 	
+	
 	public String getName()
 	{
 		return "IndustrialCraft2 Tectonicus Module";
 	}
+	
 	
 	public void loadConfiguration(Element config)
 	{
@@ -58,10 +60,12 @@ public class IC2Plugin implements Plugin
 		}
 	}
 	
+	
 	public EnumSet<Plugin.Feature> getFeatures()
 	{
 		return features;
 	}
+	
 	
 	public void registerBlockTypes(BlockTypeRegistry registry)
 	{

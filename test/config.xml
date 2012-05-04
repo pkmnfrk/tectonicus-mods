@@ -7,11 +7,11 @@
 	>
 		<plugin
 			name="ic2"
-			class="com.mikecaron.tectonicus.ic2.IC2Plugin">
+			class="com.mikecaron.tectonicus.ic2.IC2Plugin"
 			
-			<configFile path="IC2.cfg" />
-			
-		</plugin>
+			configFile="IC2.cfg"
+			jarFile="industrialcraft-2-client_1.95.jar"
+		/>
 	</config>
 
 	<map
